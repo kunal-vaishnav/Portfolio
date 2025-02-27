@@ -1,6 +1,6 @@
 import form from "./assets/form.jpg";
 import React, { useState } from "react";
-
+import API from "./Connect.js"
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
