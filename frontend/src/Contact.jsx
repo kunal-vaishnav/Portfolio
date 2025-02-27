@@ -19,7 +19,7 @@ const Contact = () => {
     const fd = new FormData(event.target);
     const recruiterData = Object.fromEntries(fd.entries());
     console.log(recruiterData);
-    fetch("http://localhost:3000/formdata", {
+    fetch(API+"formdata", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
