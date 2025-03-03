@@ -28,7 +28,8 @@ app.post("/formdata", async (req, res) => {
     ...formsdata,
     id: (Math.random() * 1000).toString(),
   };
-  const latestformdata = path.join(datapath, "formdata.json");
+  //const latestformdata = path.join(datapath, "formdata.json");
+  const latestformdata='/tmp/formdata.json';
   const datas = await fs.readFile(latestformdata, "utf8");
   const alldata = JSON.parse(datas);
   alldata.push(newdata);
